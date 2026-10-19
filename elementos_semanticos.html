@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PAJAROS ENFADADOS</title>
+  <meta name="author" content="Johnny">
+  <meta name="description" content="Sipnosis y opinion de la pelicula">
+  <meta name="date" content="2026-10-14">
+  <style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+
+<body>
+  <div id="cabecera"> <!-- TITULO 1 DIV -->
+<header> 
+  Angry Birds the Movie
+  </header>
+  <h1> Que es..</h1>
+  <p>Pelicula basada totalmente en el unvierso de
+     el conocido videojuego de Angry Birds (2016)</p>
+    <br>
+    <section>
+    <article>
+    <h3>Tipo de pelicula:</h3>
+     <ul>
+    <li>Comedia</li>
+    <li>Familiar</li>
+    <li>Aventura</li>
+  </ul>
+  <p>En el momento de la salida de la pelicula fue muy criticada por su diseño "humanoide" ya que según
+    no se parecia a los juegos originales, despues de unos años puedo decir que ha envejecido bien como
+    pelicula familiar y comica y la gente lo recuerda con cariño.
+  </p>
+    <a href="https://www.rottentomatoes.com/m/the_angry_birds_movie" target="_blank">OPINIONES GENERALES DE LA PELICULA</a>
+  </article>
+  </div>
+
+<div id="contenido-principal"> <!--CONTENIDO 2 DIV -->
+  <h2>Reparto Principal</h2>
+  <!--Tabla de actores-->
+  <nav>
+  <table border="1">
+    <thead>
+      <tr>
+        <th>Actor voz ingles</th>
+        <th>Personaje</th>
+      </tr>
+    </thead>
+      <tbody>
+          <tr>
+              <td>Jason Sudeikis</td>
+              <td><a href="#">Red</a></td>
+          </tr>
+          <tr>
+              <td>Josh Gad</td>
+              <td><a href="#">Chuck</a></td>
+          </tr>
+          <tr>
+              <td>Danny McBride</td>
+              <td><a href="#">Bomb</a></td>
+          </tr>
+      </tbody>
+  </table>
+  </section>
+</nav>
+</div>
+
+<div>
+<h2> Galeria y video</h2>
+  <em><mark>Primera Imagen</mark> </em>
+  <br>
+  <img src="angrybirdsmovie1.jpg" alt=RedConElTirachinas" width="400"><br>
+  <i>Segunda Imagen</i>
+  <br>
+  <img src="angrybirdsmovie2.png" alt="Descripción de la primera imagen" width="400"><br>
+    <b>TRAILER DE ANGRY BIRDS:</b>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/I5NUePZrJ20?si=HMUZlfEl_IO9U5xn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+<footer>
+  Creado por Johnny - Aplicaciones y multiplataforma 1r año
+</footer>
+</body>
+</html>

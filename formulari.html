@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<body>
+
+    <form action="PAGINA.php" method="POST">
+        
+        <!-- Bloque 1: Datos Personales -->
+        <fieldset>
+            <legend>Datos Personales</legend>
+
+            <label for="nombre">Nombre y Apellidos:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required><br><br>
+
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required><br><br>
+
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" id="contrasena" name="contrasena" minlength="8" placeholder="Mínimo 8 caracteres"><br><br>
+
+            <label for="fecha">Fecha de nacimiento:</label>
+            <input type="date" id="fecha" name="fecha"><br><br>
+
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" min="16" max="99"><br><br>
+        </fieldset>
+
+        <br>
+
+        <!-- Bloque 2: Datos Académicos -->
+        <fieldset>
+            <legend>Datos Académicos y Preferencias</legend>
+
+            <label>Turno de estudio:</label><br>
+            <input type="radio" id="manana" name="turno" value="manana">
+            <label for="manana">Mañana</label>
+            
+            <input type="radio" id="tarde" name="turno" value="tarde">
+            <label for="tarde">Tarde</label><br><br>
+
+            <label>Módulos matriculados:</label><br>
+            <input type="checkbox" id="lenguajes" name="modulos" value="lenguajes">
+            <label for="lenguajes">Lenguajes de Marcas</label><br>
+            
+            <input type="checkbox" id="programacion" name="modulos" value="programacion">
+            <label for="programacion">Programación</label><br>
+            
+            <input type="checkbox" id="bbdd" name="modulos" value="bbdd">
+            <label for="bbdd">Bases de Datos</label><br><br>
+
+            <label for="experiencia">Nivel de experiencia previa:</label>
+            <select id="experiencia" name="experiencia">
+                <option value="sin_experiencia">Sin experiencia</option>
+                <option value="basico">Básico</option>
+                <option value="intermedio">Intermedio</option>
+                <option value="avanzado">Avanzado</option>
+            </select>
+        </fieldset>
+
+        <br>
+
+        <!-- Bloque 3: Observaciones y Botones -->
+        <fieldset>
+            <legend>Observaciones y Botones</legend>
+
+            <label for="comentarios">Comentarios / Biografía:</label><br>
+            <textarea id="comentarios" name="comentarios" rows="4" cols="40" placeholder="Escribe aquí..."></textarea><br><br>
+
+            <input type="checkbox" id="terminos" name="terminos" required>
+            <label for="terminos">Acepto la política de privacidad</label><br><br>
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Restablecer">
+        </fieldset>
+
+    </form>
+
+</body>
+</html>
